@@ -1,0 +1,21 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+
+
+  </ul>
+</div>
+<div>
+ <a href="about.html">About</a><br>
+ <a href="philosophy.html">Philosophy</a><br>
+ <a href="Calendar.html">Calendar</a> <br>
+  <a href="Ourfavbooks.html">Our Fav Books</a>
+</div>
